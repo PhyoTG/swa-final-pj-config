@@ -3,7 +3,7 @@ SWA Final Project Config Jan 2023
 
 # To Implement From Service
 Add Below Dependencies to POM file
-
+```
    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -18,15 +18,20 @@ Add Below Dependencies to POM file
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
     </dependencies>
+ ```  
    
-   
-# Create Application.yml 
-Put Server Port
+# Create application.yml 
+```
+server:
+  port: <<your port>>
+```
 
 # Create bootstrap.yml
+```
 spring:
   application:
     name: SchoolService #your service name
   cloud:
     config:
       url: http://localhost:8888 #config-server url
+```
