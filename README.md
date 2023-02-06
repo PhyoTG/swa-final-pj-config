@@ -35,3 +35,8 @@ spring:
     config:
       url: http://localhost:8888 #config-server url
 ```
+# Steps 
+You can now add your config variable in your respective yml file and use it in your service.
+```
+@Value("${testingText}")
+```
